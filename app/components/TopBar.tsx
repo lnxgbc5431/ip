@@ -32,6 +32,19 @@ export function TopBar({ onInboxOpen }: TopBarProps) {
         >
           <EnvelopeClosedIcon width={ICON_SIZE} height={ICON_SIZE} />
         </IconButton>
+        <IconButton
+          size="4"
+          variant="ghost"
+          aria-label="GitHub"
+          onClick={() =>
+            window.open(
+              "https://github.com/GuooGaii/ip-geoaddress-generator",
+              "_blank"
+            )
+          }
+        >
+          <GitHubLogoIcon width={ICON_SIZE} height={ICON_SIZE} />
+        </IconButton>
         <ThemeChanger iconSize={ICON_SIZE} />
       </Flex>
     </Flex>
